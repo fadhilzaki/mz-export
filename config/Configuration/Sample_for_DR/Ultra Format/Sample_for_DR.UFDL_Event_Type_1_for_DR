@@ -1,0 +1,1111 @@
+{
+  "Key": "DR1727475958839",
+  "Name": "UFDL_Event_Type_1_for_DR",
+  "Type": "Ultra Format",
+  "Folder": "Sample_for_DR",
+  "Owner": "mzadmin",
+  "Is Valid": true,
+  "Access Groups -read -write -execute": [
+    "Administrator",
+    "Administrator",
+    "Administrator"
+  ],
+  "Data": {
+    "Definition": "xml_schema {
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+    \t<xs:complexType maxOccurs='unbounded' minOccurs='0' name='Event_Type_1'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='field1' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field2' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field3' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field4' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field5' type='xs:dateTime' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field6' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field7' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field8' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field9' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field10' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field11' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field12' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field13' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field14' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field15' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field16' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field17' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field18' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field19' type='xs:long' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field20' type='xs:long' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field21' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field22' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field23' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field24' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field25' type='xs:boolean' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field26' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field27' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field28' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field29' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field30' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field31' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field32' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='UsageQuantityList'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='unbounded' minOccurs='0' name='EventUsageQuantity' type='EventUsageQuantity' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='field33' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field34' type='xs:int' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field35' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field36' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field37' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field38' type='nonNegativeInteger_array' />
+            <xs:element maxOccurs='1' minOccurs='0' name='MeterUpdateArray'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='unbounded' minOccurs='0' name='MeterUpdate' type='MeterUpdate' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='AppliedOfferArray'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='unbounded' minOccurs='0' name='EventAppliedOffer' type='EventAppliedOffer' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='field39' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field40' type='string_array' />
+            <xs:element maxOccurs='1' minOccurs='0' name='AppliedBundleArray'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='unbounded' minOccurs='0' name='EventAppliedBundle' type='EventAppliedBundle' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='AppliedCatalogItemArray'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='unbounded' minOccurs='0' name='EventAppliedCatalogItem' type='EventAppliedCatalogItem' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='AppliedTaxArray'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='unbounded' minOccurs='0' name='EventAppliedTax' type='EventAppliedTax' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='AppliedRateTagArray'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='unbounded' minOccurs='0' name='EventAppliedRateTag' type='EventAppliedRateTag' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='SecondaryEventList'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='unbounded' minOccurs='0' name='SecondaryEvent' type='SecondaryEvent' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='ApiEventET_2' type='ApiEventET_2Extension_choice' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field42' type='PrimaryEventExtension_choice' />
+            <xs:element maxOccurs='1' minOccurs='0' name='ApiEventSecurityInfo'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='1' minOccurs='0' name='ApiEventSecurityInfo_1' type='ApiEventSecurityInfo_1' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='AppliedPurchasePackageArray'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='unbounded' minOccurs='0' name='EventAppliedPurchasePackage' type='EventAppliedPurchasePackage' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='field43' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field44' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field45' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field46' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field47' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field48' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field49' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field50' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field51' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field52' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field53' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='BalanceUpdateArray'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='unbounded' minOccurs='0' name='BalanceUpdate' type='BalanceUpdate' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='ChargeList'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='unbounded' minOccurs='0' name='EventCharge' type='EventCharge' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='field54' type='xs:dateTime' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field55' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='EventId' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field57' type='xs:date' />
+            <xs:element maxOccurs='1' minOccurs='0' name='GlInfoArray'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='unbounded' minOccurs='0' name='EventGlInfo' type='EventGlInfo' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='field58' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field59' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field60' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='BalanceStateUpdateArray'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='unbounded' minOccurs='0' name='BalanceStateUpdate' type='BalanceStateUpdate' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='field61' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field62' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field63' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field64' type='InitiatorType' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field65' type='WalletOwnerType' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field66' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='CarrierChargeList'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='unbounded' minOccurs='0' name='EventCharge' type='EventCharge' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='field67' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field68' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field69' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='TaxOnTaxChargeList'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='unbounded' minOccurs='0' name='EventCharge' type='EventCharge' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='field70' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field71' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field72' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field73' type='xs:boolean' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field74' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field75' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field76' type='xs:nonNegativeInteger' />
+        </xs:all>
+    </xs:complexType>
+\t<xs:complexType name='EventUsageQuantity'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='field77' type='PriceLoaderQuantityType' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field78' type='PriceLoaderQuantityUnitType' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field79' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field80' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field81' type='decimalype' />
+        </xs:all>
+    </xs:complexType>
+    <xs:simpleType name='PriceLoaderQuantityType'>
+        <xs:union memberTypes='xs:nonNegativeInteger PriceLoaderQuantityType_strings' />
+    </xs:simpleType>
+\t<xs:simpleType name='PriceLoaderQuantityType_strings'>
+        <xs:restriction base='xs:string'>
+            <xs:enumeration value='none' />
+            <xs:enumeration value='actual_duration' />
+            <xs:enumeration value='active_duration' />
+            <xs:enumeration value='monetary' />
+            <xs:enumeration value='total_ET_2' />
+            <xs:enumeration value='in_ET_2' />
+            <xs:enumeration value='out_ET_2' />
+            <xs:enumeration value='service_specific' />
+            <xs:whiteSpace value='collapse' />
+        </xs:restriction>
+    </xs:simpleType>
+\t<xs:simpleType name='PriceLoaderQuantityUnitType'>
+        <xs:union memberTypes='xs:nonNegativeInteger PriceLoaderQuantityUnitType_strings' />
+    </xs:simpleType>
+\t<xs:simpleType name='PriceLoaderQuantityUnitType_strings'>
+        <xs:restriction base='xs:string'>
+            <xs:enumeration value='none' />
+            <xs:enumeration value='seconds' />
+            <xs:enumeration value='minutes' />
+            <xs:enumeration value='hours' />
+            <xs:enumeration value='days' />
+            <xs:enumeration value='weeks' />
+            <xs:enumeration value='bytes' />
+            <xs:enumeration value='kbytes' />
+            <xs:enumeration value='mbytes' />
+            <xs:enumeration value='gbytes' />
+            <xs:whiteSpace value='collapse' />
+        </xs:restriction>
+    </xs:simpleType>
+\t<xs:simpleType name='decimalype'>
+        <xs:union memberTypes='xs:decimal infinityype' />
+    </xs:simpleType>
+    <xs:simpleType name='infinityype'>
+        <xs:restriction base='xs:string'>
+            <xs:enumeration value='infinity' />
+            <xs:enumeration value='-infinity' />
+            <xs:enumeration value='INFINITY' />
+            <xs:enumeration value='-INFINITY' />
+        </xs:restriction>
+    </xs:simpleType>
+\t<xs:complexType name='string_array'>
+        <xs:sequence>
+            <xs:element maxOccurs='unbounded' minOccurs='0' name='value' type='xs:string' />
+        </xs:sequence>
+    </xs:complexType>
+\t<xs:complexType name='nonNegativeInteger_array'>
+        <xs:sequence>
+            <xs:element maxOccurs='unbounded' minOccurs='0' name='value' type='xs:nonNegativeInteger' />
+        </xs:sequence>
+    </xs:complexType>
+\t<xs:complexType name='MeterUpdate'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='field82' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field83' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field84' type='xs:string' />
+        </xs:all>
+    </xs:complexType>
+\t<xs:complexType name='EventAppliedOffer'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='field85' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field86' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field87' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field88' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field89' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field90' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field91' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field92' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field93' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field94' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field95' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field96' type='xs:boolean' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field97' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field98' type='ProductOfferExtension_choice' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field99' type='PurchasedOfferExtension_choice' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field100' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field101' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field102' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field103' type='xs:string' />
+        </xs:all>
+    </xs:complexType>
+\t<xs:complexType name='ProductOfferExtension_choice'>
+        <xs:choice maxOccurs='1' minOccurs='1'>
+            <xs:element name='field104' type='ProductOfferExtension' />
+            <xs:element name='field105' type='ProductOffer' />
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name='ProductOfferExtension'>
+        <xs:all minOccurs='0' />
+    </xs:complexType>
+\t<xs:complexType name='ProductOffer'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='OfferType' type='xs:string' />
+        </xs:all>
+    </xs:complexType>
+\t<xs:complexType name='PurchasedOfferExtension_choice'>
+        <xs:choice maxOccurs='1' minOccurs='1'>
+            <xs:element name='field106' type='PurchasedOfferExtension' />
+        </xs:choice>
+    </xs:complexType>
+\t<xs:complexType name='PurchasedOfferExtension'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='field108' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field109' type='string_array' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field110' type='string_array' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field111' type='string_array' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field112' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field113' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field114' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field115' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field116' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field117' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field118' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field119' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field200' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field221' type='xs:dateTime' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field222' type='xs:nonNegativeInteger' />
+        </xs:all>
+    </xs:complexType>
+\t<xs:complexType name='EventAppliedBundle'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='field223' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field224' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field225' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field226' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field227' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='BundleAttr'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='1' minOccurs='0' name='BundleExtension' type='BundleExtension' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='field228' type='PurchasedOfferExtension_choice' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field229' type='xs:nonNegativeInteger' />
+        </xs:all>
+    </xs:complexType>
+\t<xs:complexType name='BundleExtension'>
+        <xs:all minOccurs='0' />
+    </xs:complexType>
+\t<xs:complexType name='EventAppliedCatalogItem'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='field230' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field231' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field232' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field233' type='TemplateAttr_choice' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field234'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='unbounded' minOccurs='0' name='EventParameterInfo' type='EventParameterInfo' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='field236' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field237' type='xs:dateTime' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field238' type='xs:dateTime' />
+        </xs:all>
+    </xs:complexType>
+\t<xs:complexType name='TemplateAttr_choice'>
+        <xs:choice maxOccurs='1' minOccurs='1'>
+            <xs:element name='field239' type='TemplateAttr' />
+            <xs:element name='field240' type='Template' />
+            <xs:element name='field241' type='SampleTemplateAttr' />
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name='TemplateAttr'>
+        <xs:all minOccurs='0' />
+    </xs:complexType>
+\t<xs:complexType name='Template'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='field242' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field243' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field244' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field245' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field246' type='string_array' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field247' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field248' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field249' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field250' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field251' type='string_array' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field252' type='string_array' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field253' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field254' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field255' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field256' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field257' type='string_array' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field258' type='string_array' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field259' type='string_array' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field260' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field261' type='xs:nonNegativeInteger' />
+        </xs:all>
+    </xs:complexType>
+\t<xs:complexType name='SampleTemplateAttr'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='field262' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field263' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field264' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field265' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field266' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field267' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field268' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field269' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field270' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field271' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field272' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field273' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field274' type='xs:nonNegativeInteger' />
+        </xs:all>
+    </xs:complexType>
+\t<xs:complexType name='EventParameterInfo'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='field275' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field276' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field277' type='PriceLoaderParameterET_2Type' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field278' type='ParameterValue_choice' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field279' type='xs:boolean' />
+        </xs:all>
+    </xs:complexType>
+\t<xs:simpleType name='PriceLoaderParameterET_2Type'>
+        <xs:union memberTypes='xs:nonNegativeInteger PriceLoaderParameterET_2Type_strings' />
+    </xs:simpleType>
+\t<xs:simpleType name='PriceLoaderParameterET_2Type_strings'>
+        <xs:restriction base='xs:string'>
+            <xs:enumeration value='decimal' />
+            <xs:enumeration value='int32' />
+            <xs:enumeration value='int64' />
+            <xs:enumeration value='uint32' />
+            <xs:enumeration value='uint64' />
+            <xs:enumeration value='boolean' />
+            <xs:enumeration value='string' />
+            <xs:enumeration value='datetime' />
+            <xs:whiteSpace value='collapse' />
+        </xs:restriction>
+    </xs:simpleType>
+\t<xs:complexType name='ParameterValue_choice'>
+        <xs:choice maxOccurs='1' minOccurs='1'>
+            <xs:element name='ParameterValue' type='ParameterValue' />
+            <xs:element name='ParameterUnsignedInt64Value' type='ParameterUnsignedInt64Value' />
+            <xs:element name='ParameterUnsignedInt32Value' type='ParameterUnsignedInt32Value' />
+            <xs:element name='ParameterStringValue' type='ParameterStringValue' />
+            <xs:element name='ParameterInt64Value' type='ParameterInt64Value' />
+            <xs:element name='ParameterInt32Value' type='ParameterInt32Value' />
+            <xs:element name='ParameterDecimalValue' type='ParameterDecimalValue' />
+            <xs:element name='ParameterDateTimeValue' type='ParameterDateTimeValue' />
+            <xs:element name='ParameterBoolValue' type='ParameterBoolValue' />
+        </xs:choice>
+    </xs:complexType>
+\t<xs:complexType name='ParameterValue'>
+        <xs:all minOccurs='0' />
+    </xs:complexType>
+    <xs:complexType name='ParameterUnsignedInt64Value'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='Value' type='xs:nonNegativeInteger' />
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name='ParameterUnsignedInt32Value'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='Value' type='xs:nonNegativeInteger' />
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name='ParameterStringValue'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='Value' type='xs:string' />
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name='ParameterInt64Value'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='Value' type='xs:long' />
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name='ParameterInt32Value'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='Value' type='xs:int' />
+        </xs:all>
+    </xs:complexType>
+\t<xs:complexType name='ParameterDecimalValue'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='Value' type='decimalype' />
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name='ParameterDateTimeValue'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='Value' type='xs:dateTime' />
+        </xs:all>
+    </xs:complexType>
+\t<xs:complexType name='ParameterBoolValue'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='Value' type='xs:boolean' />
+        </xs:all>
+    </xs:complexType>
+\t<xs:complexType name='EventAppliedTax'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='field280' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field281' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field282' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field283' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field284' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field285' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field286' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field287' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field288' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field289' type='xs:boolean' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field290' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field291' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field292' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field293' type='xs:boolean' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field294' type='xs:string' />
+        </xs:all>
+    </xs:complexType>
+\t<xs:complexType name='EventAppliedRateTag'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='field295' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field296' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field297' type='xs:string' />
+        </xs:all>
+    </xs:complexType>
+\t<xs:complexType name='ApiEventSecurityInfo_1'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='field298' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field299' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field300' type='xs:string' />
+        </xs:all>
+    </xs:complexType>
+\t<xs:complexType name='EventAppliedPurchasePackage'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='field301' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field302' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='PurchasePackageAttr'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='1' minOccurs='0' name='PurchasePackageExtension' type='PurchasePackageExtension' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+\t<xs:complexType name='PurchasePackageExtension'>
+        <xs:all minOccurs='0' />
+    </xs:complexType>
+\t<xs:complexType name='SecondaryEvent'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='field304' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field305' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field306' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field307' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field308' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field309' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field310' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field311' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field312' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field313' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field314' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field315' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field316' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='BalanceUpdateArray'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='unbounded' minOccurs='0' name='BalanceUpdate' type='BalanceUpdate' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='ChargeList'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='unbounded' minOccurs='0' name='EventCharge' type='EventCharge' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='field317' type='xs:dateTime' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field318' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field319' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field340' type='xs:date' />
+            <xs:element maxOccurs='1' minOccurs='0' name='GlInfoArray'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='unbounded' minOccurs='0' name='EventGlInfo' type='EventGlInfo' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='field341' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field342' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field343' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='BalanceStateUpdateArray'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='unbounded' minOccurs='0' name='BalanceStateUpdate' type='BalanceStateUpdate' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='field344' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field345' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field346' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field347' type='InitiatorType' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field348' type='WalletOwnerType' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field349' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='CarrierChargeList'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='unbounded' minOccurs='0' name='EventCharge' type='EventCharge' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='field350' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field351' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field352' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='TaxOnTaxChargeList'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='unbounded' minOccurs='0' name='EventCharge' type='EventCharge' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='field353' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field3533' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field3534' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field354' type='xs:boolean' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field355' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field356' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field357' type='xs:nonNegativeInteger' />
+        </xs:all>
+    </xs:complexType>
+\t<xs:complexType name='ApiEventET_2Extension_choice'>
+        <xs:choice maxOccurs='1' minOccurs='1'>
+            <xs:element name='ApiEventET_2Extension' type='ApiEventET_2Extension' />
+            <xs:element name='ApiEventET_2' type='ApiEventET_2' />
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name='ApiEventET_2Extension'>
+        <xs:all minOccurs='0' />
+    </xs:complexType>
+\t<xs:complexType name='ApiEventET_2'>
+        <xs:all minOccurs='0' />
+    </xs:complexType>
+\t<xs:complexType name='PrimaryEventExtension_choice'>
+        <xs:choice maxOccurs='1' minOccurs='1'>
+            <xs:element name='PrimaryEventExtension' type='PrimaryEventExtension' />
+        </xs:choice>
+    </xs:complexType>
+\t<xs:complexType name='PrimaryEventExtension'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='field358' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field359' type='xs:string' />
+        </xs:all>
+    </xs:complexType>
+\t<xs:complexType name='BalanceUpdate'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='field360' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field361' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field362' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field363' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field364' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field365' type='xs:dateTime' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field366' type='xs:dateTime' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field367' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field368' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field369' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field370' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field371' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='FieldNameValueList'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='unbounded' minOccurs='0' name='EventFieldNameValue' type='EventFieldNameValue' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='field3711' type='EventDebtBalanceSubtype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='DynamicBalanceKeyFieldNameValueList'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='unbounded' minOccurs='0' name='EventFieldNameValue' type='EventFieldNameValue' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='BalanceTemplateAttr'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='1' minOccurs='0' name='BalanceTemplateExtension' type='BalanceTemplateExtension' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+\t<xs:complexType name='EventFieldNameValue'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='field372' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field373' type='xs:int' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field374' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field375' type='xs:string' />
+        </xs:all>
+    </xs:complexType>
+\t <xs:simpleType name='EventDebtBalanceSubtype'>
+        <xs:union memberTypes='xs:nonNegativeInteger EventDebtBalanceSubtype_strings' />
+    </xs:simpleType>
+\t<xs:simpleType name='EventDebtBalanceSubtype_strings'>
+        <xs:restriction base='xs:string'>
+            <xs:enumeration value='not_debt' />
+            <xs:enumeration value='fee_debt' />
+            <xs:enumeration value='purchase_debt' />
+            <xs:enumeration value='recurring_debt' />
+            <xs:enumeration value='contract_debt' />
+            <xs:whiteSpace value='collapse' />
+        </xs:restriction>
+    </xs:simpleType>
+\t<xs:complexType name='BalanceTemplateExtension'>
+        <xs:all minOccurs='0' />
+    </xs:complexType>
+\t<xs:complexType name='EventCharge'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='field376' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field377' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field378' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field379' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field380' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field381' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field382' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field383' type='ImpactSourceSubtype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field384' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field385' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field386' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field387' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field388' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field389' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field390' type='xs:boolean' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field391' type='xs:nonNegativeInteger' />
+        </xs:all>
+    </xs:complexType>
+\t<xs:simpleType name='ImpactSourceSubtype_strings'>
+        <xs:restriction base='xs:string'>
+            <xs:enumeration value='product_offer' />
+            <xs:enumeration value='bundle' />
+            <xs:whiteSpace value='collapse' />
+        </xs:restriction>
+    </xs:simpleType>
+\t<xs:simpleType name='ImpactSourceSubtype'>
+        <xs:union memberTypes='xs:nonNegativeInteger ImpactSourceSubtype_strings' />
+    </xs:simpleType>
+\t<xs:complexType name='EventGlInfo'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='field392' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field3922' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field393' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field394' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field395' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field396' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field397' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field398' type='xs:date' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field399' type='xs:date' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field400' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field401' type='decimalype' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field402' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field403' type='xs:string' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field404' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field405' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field406' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='TxnAttr'>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs='1' minOccurs='0' name='EventGlInfoAttr' type='EventGlInfoAttr' />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs='1' minOccurs='0' name='AssociatedGlInfoIndex' type='xs:nonNegativeInteger' />
+        </xs:all>
+    </xs:complexType>
+\t<xs:complexType name='EventGlInfoAttr'>
+        <xs:all minOccurs='0' />
+    </xs:complexType>
+\t<xs:complexType name='BalanceStateUpdate'>
+        <xs:all minOccurs='0'>
+            <xs:element maxOccurs='1' minOccurs='0' name='field407' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field408' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field409' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field410' type='xs:dateTime' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field411' type='xs:dateTime' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field412' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field413' type='xs:nonNegativeInteger' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field414' type='PriceLoaderRelativeUnitType' />
+            <xs:element maxOccurs='1' minOccurs='0' name='field415' type='xs:string' />
+        </xs:all>
+    </xs:complexType>
+\t<xs:simpleType name='PriceLoaderRelativeUnitType'>
+        <xs:union memberTypes='xs:nonNegativeInteger PriceLoaderRelativeUnitType_strings' />
+    </xs:simpleType>
+\t<xs:simpleType name='PriceLoaderRelativeUnitType_strings'>
+        <xs:restriction base='xs:string'>
+            <xs:enumeration value='hours' />
+            <xs:enumeration value='days' />
+            <xs:enumeration value='weeks' />
+            <xs:enumeration value='months' />
+            <xs:enumeration value='years' />
+            <xs:enumeration value='minutes' />
+            <xs:whiteSpace value='collapse' />
+        </xs:restriction>
+    </xs:simpleType>
+\t<xs:simpleType name='InitiatorType'>
+        <xs:union memberTypes='xs:nonNegativeInteger InitiatorType_strings' />
+    </xs:simpleType>
+\t<xs:simpleType name='InitiatorType_strings'>
+        <xs:restriction base='xs:string'>
+            <xs:enumeration value='subscription' />
+            <xs:enumeration value='group' />
+            <xs:enumeration value='user' />
+            <xs:enumeration value='device' />
+            <xs:whiteSpace value='collapse' />
+        </xs:restriction>
+    </xs:simpleType>
+    \t<xs:simpleType name='WalletOwnerType'>
+        <xs:union memberTypes='xs:nonNegativeInteger WalletOwnerType_strings' />
+    </xs:simpleType>
+\t <xs:simpleType name='WalletOwnerType_strings'>
+        <xs:restriction base='xs:string'>
+            <xs:enumeration value='subscription' />
+            <xs:enumeration value='group' />
+            <xs:whiteSpace value='collapse' />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
+};
+
+external WhiteSpace: identified_by(
+value == 0x20 || value == 0xA || value == 0xD ) {
+    int value: static_size(1);
+};
+
+//EventUsageQuantity
+in_map inEventUsage: external(EventUsageQuantity), target_internal(EventUsageQuantity_TI)
+{
+    automatic;
+};
+
+//MeterUpdate
+in_map inMeterUpdate: external(MeterUpdate),target_internal(MeterUpdate_TI)
+{
+\tautomatic;
+};
+
+//EventAppliedOffer
+in_map inEventAppliedOffer: external(EventAppliedOffer),target_internal(EventAppliedOffer_TI)
+{
+\tautomatic
+\t{
+\t\tProductOfferExtension_choice : using in_map inProductOfferchoice;
+\t\tPurchasedOfferExtension_choice : using in_map inPurchasedOfferchoice; 
+\t};
+};
+
+in_map inProductOfferchoice: external(ProductOfferExtension_choice),target_internal(ProductOfferchoice_TI)
+{
+\tautomatic
+\t{
+\t\tProductOfferExtension : using in_map inProductOfferExtension;
+\t\tProductOffer : using in_map inProductOffer;
+\t};
+};
+
+in_map inProductOfferExtension:\texternal(ProductOfferExtension),target_internal(ProductOfferExtension_TI)
+{
+\tautomatic;
+};
+
+in_map inProductOffer:\texternal(ProductOffer),target_internal(ProductOffer_TI)
+{
+\tautomatic;
+};
+
+in_map inPurchasedOfferchoice: external(PurchasedOfferExtension_choice),target_internal(PurchasedOfferchoice_TI)
+{
+\tautomatic
+\t{
+\t\tPurchasedOfferExtension : using in_map inPurchasedOfferExtension;
+\t};
+};
+
+in_map inPurchasedOfferExtension : external(PurchasedOfferExtension),target_internal(PurchasedOfferExtension_TI)
+{
+\tautomatic;
+};
+
+//EventAppliedBundle
+in_map inEventAppliedBundle: external(EventAppliedBundle),target_internal(EventAppliedBundle_TI)
+{
+\tautomatic
+\t{
+\t\tBundleExtension : using in_map inBundleExtension;
+\t};
+};
+
+in_map inBundleExtension : external(BundleExtension),target_internal(BundleExtension_TI)
+{
+\tautomatic;
+};
+
+
+//EventAppliedCatalogItem
+in_map inEventAppliedCatalogItem: external(EventAppliedCatalogItem),target_internal(EventAppliedCatalogItem_TI)
+{
+\tautomatic
+\t{
+\t\tTemplateAttr_choice: using in_map inTemplateAttrchoice;
+\t\tEventParameterInfo: using in_map inEventParameterInfo;
+\t};
+};
+in_map inTemplateAttrchoice: external(TemplateAttr_choice),target_internal(TemplateAttrchoice_TI)
+{
+\tautomatic
+\t{
+\t\tTemplateAttr: using in_map inTemplateAttr;
+\t\tTemplate: using in_map inTemplate;
+\t\tSampleTemplateAttr : using in_map inSampleTemplateAttr;
+\t};
+};
+in_map inTemplateAttr: external(TemplateAttr),target_internal(TemplateAttr_TI)
+{
+\tautomatic;
+};
+in_map inTemplate: external(Template),target_internal(Template_TI)
+{
+\tautomatic;
+};
+in_map inSampleTemplateAttr: external(SampleTemplateAttr),target_internal(SampleTemplateAttr_TI)
+{
+\tautomatic;
+};
+
+
+in_map inEventParameterInfo: external(EventParameterInfo),target_internal(EventParameterInfo_TI)
+{
+\tautomatic;
+
+};
+
+//EventAppliedTax
+in_map inEventAppliedTax: external(EventAppliedTax),target_internal(EventAppliedTax_TI)
+{
+\tautomatic;
+};
+
+//EventAppliedRateTag
+in_map inEventAppliedRateTag: external(EventAppliedRateTag),target_internal(EventAppliedRateTag_TI)
+{
+\tautomatic;
+};
+
+
+
+//SecondaryEvent
+in_map inSecondaryEvent: external(SecondaryEvent),target_internal(SecondaryEvent_TI)
+{
+\tautomatic
+\t{
+\t\tBalanceUpdate     :using in_map inBalanceUpdate;
+\t\tEventCharge       :using in_map inEventCharge;
+\t\tEventGlInfo       :using in_map inEventGlInfo;
+\t\tBalanceStateUpdate:using in_map inBalanceStateUpdate;
+    };
+};
+
+//PrimaryEventAttr
+in_map inPrimaryEventAttr: external(PrimaryEventExtension_choice),target_internal(PrimaryEventAttr_TI)
+{
+\t\tautomatic
+\t{
+\t\tPrimaryEventExtension:using in_map inPrimaryEventExtension;
+\t};
+};
+
+in_map inPrimaryEventExtension: external(PrimaryEventExtension),target_internal(PrimaryEventExtension_TI)
+{
+\tautomatic;
+};
+
+//EventAppliedPurchasePackage
+in_map inEventAppliedPurchasePackage: external(EventAppliedPurchasePackage),target_internal(EventAppliedPurchasePackage_TI)
+{
+    automatic
+\t{
+\t\tPurchasePackageExtension : using in_map inPurchasePackageExtension;
+\t};
+};
+
+in_map inPurchasePackageExtension: external(PurchasePackageExtension),target_internal(PurchasePackageExtension_TI)
+{
+    automatic;
+};
+
+//BalanceUpdate
+in_map inBalanceUpdate: external(BalanceUpdate),target_internal(BalanceUpdate_TI)
+{
+    automatic
+\t{
+\t\tEventFieldNameValue      :using in_map inEventFieldNameValue;
+\t\tBalanceTemplateExtension : using in_map inBalanceTemplate;
+\t};
+};
+
+in_map inEventFieldNameValue: external(EventFieldNameValue),target_internal(EventFieldNameValue_TI)
+{
+    automatic;
+};
+
+in_map inBalanceTemplate: external(BalanceTemplateExtension),target_internal(BalanceTemplate_TI)
+{
+    automatic;
+};
+
+//EventCharge
+in_map inEventCharge: external(EventCharge),target_internal(EventCharge_TI)
+{
+    automatic;
+};
+
+//EventGlInfo
+in_map inEventGlInfo: external(EventGlInfo),target_internal(EventGlInfo_TI)
+{
+    automatic
+    {
+\t\tEventGlInfoAttr: using in_map inEventGlInfoAttr;
+\t};
+};
+
+//EventGlInfoAttr
+in_map inEventGlInfoAttr: external(EventGlInfoAttr),target_internal(EventGlInfoAttr_TI)
+{
+    automatic;
+};
+
+//BalanceStateUpdateArray
+in_map inBalanceStateUpdate: external(BalanceStateUpdate),target_internal(BalanceStateUpdate_TI)
+{
+    automatic;
+};
+
+//nonNegativeInteger_array
+in_map innonNegativeInteger: external(nonNegativeInteger_array),target_internal(nonNegativeIntegearray_TI)
+{
+    automatic;
+};
+internal event_type_1Internal
+{
+\tEventUsageQuantity_TI             EventUsage;
+\tMeterUpdate_TI                    MeterUpdate;
+\tEventAppliedOffer_TI              EventAppliedOffer;
+\tEventAppliedBundle_TI             EventAppliedBundle;
+\tEventAppliedCatalogItem_TI        EventAppliedCat;
+\tEventAppliedTax_TI                EventAppliedTax;
+\tEventAppliedRateTag_TI            EventAppliedRate;
+\tSecondaryEvent_TI                 SecondaryEvent;
+\tEventAppliedPurchasePackage_TI    EventAppliedPurchase;
+\tBalanceUpdate_TI                  BalanceUpdate;
+\tEventCharge_TI                    EventCharge;
+\tEventGlInfo_TI                    EventGlInfo;
+\tEventGlInfoAttr_TI                EventGlInfoAttr;
+\tBalanceStateUpdate_TI             BalanceStateUpdate;
+\tnonNegativeIntegearray_TI         nonNegativeIntegearray;  
+};
+
+//in_map inEvent_type_1 :  external (Event_Type_1), internal(event_type_1Internal), target_internal(event_type_1_TI) //TODO: Check if internal can be used without automatic mapping
+in_map inEvent_type_1 :  external (Event_Type_1) ,internal(event_type_1Internal),target_internal(event_type_1_TI)
+{
+     automatic
+     {
+         EventUsageQuantity          \t\t: using in_map inEventUsage;
+\t\t MeterUpdate                 \t\t: using in_map inMeterUpdate;
+\t\t EventAppliedOffer           \t\t: using in_map inEventAppliedOffer;
+\t\t EventAppliedBundle          \t\t: using in_map inEventAppliedBundle;
+\t\t EventAppliedCatalogItem     \t\t: using in_map inEventAppliedCatalogItem;
+\t\t EventAppliedTax             \t\t: using in_map inEventAppliedTax;
+\t\t EventAppliedRateTag         \t\t: using in_map inEventAppliedRateTag;
+\t\t SecondaryEvent              \t\t: using in_map inSecondaryEvent;
+\t\t PrimaryEventExtension_choice\t\t: using in_map inPrimaryEventAttr;
+\t\t EventAppliedPurchasePackage \t\t: using in_map inEventAppliedPurchasePackage;
+\t\t BalanceUpdate               \t\t: using in_map inBalanceUpdate;
+\t\t EventCharge                 \t\t: using in_map inEventCharge;
+\t\t EventGlInfo                 \t\t: using in_map inEventGlInfo;
+\t\t BalanceStateUpdate          \t\t: using in_map inBalanceStateUpdate;
+         nonNegativeInteger_array    \t\t: using in_map innonNegativeInteger;  
+     };  
+};
+
+
+
+//Decoder for event_type_1 xml
+decoder event_type_1Decoder : in_map(inEvent_type_1);",
+    "$Type": "dr.UltraFormatConfig",
+    "$Version": 2.0
+  },
+  "documentation": "",
+  "Is Dry Run": false,
+  "$Type": "dr.Configuration",
+  "$Version": 10.1
+}

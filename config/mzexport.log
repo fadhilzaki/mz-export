@@ -1,0 +1,12 @@
+--------------------------------------------------
+Commit and pushed the export to remote repository.
+Export started at 2024-11-15 17:34:50
+Output target is (mz-export / main) /config
+--------------------------------------------------
+[Configuration/Sample_for_DR/Ultra Format] - Exporting Sample_for_DR.UFDL_Event_Type_1_for_DR
+[Configuration/Sample_for_DR/Ultra Format] - Exporting Sample_for_DR.UFDL_Sample_For_DR
+--------------------------------------------------
+[Configuration/Sample_for_DR/Workflow] - Exporting Sample_for_DR.WF_Dist_Process_DR
+[Configuration/Sample_for_DR/Workflow] - Exporting Sample_for_DR.WF_ET_1_Process_DR
+--------------------------------------------------
+Export finished at 2024-11-15 17:34:50
